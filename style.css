@@ -62,7 +62,7 @@ form button:hover {
   background: white;
   color: black;
 
-  transition: all 0.5 ease-in-out;
+  transition: all 0.5s ease;
 }
 
 .todo li {
@@ -74,8 +74,10 @@ form button:hover {
 .complete-btn {
   color: black;
   border: none;
+
   padding: 1rem;
   font-size: 1rem;
+
   cursor: pointer;
 }
 
@@ -89,4 +91,18 @@ form button:hover {
 
 .todo-item {
   padding: 0rem 0.5rem;
+}
+
+.material-symbols-outlined {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translateY(8rem) rotateZ(20deg);
+  opacity: 0;
 }
